@@ -16,6 +16,10 @@ use App\Http\Controllers\ContactController;
 |
 */
 
+\Auth::routes();
+
+Route::get('/',[HomeController::class,'index'])->name('home');
+Route::get('news',  [NewsController::class , "index"])->name("news");
 Route::get('new/{new}',  [NewsController::class , "detail"])->name("detail");
 Route::post("contactar" , [ContactController::class , "sendMail"])->name("sendMail");
 
