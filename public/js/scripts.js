@@ -1,3 +1,7 @@
+ // Preloader
+ $(window).on('load', function() {
+    $('#preloader').delay(100).fadeOut('slow',function(){$(this).remove();});
+  });
 $(document).ready(function(){
     // Boton de buscar en usuarios y visitantes
     $('#search_content').click(function(event){
