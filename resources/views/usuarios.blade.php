@@ -1,6 +1,6 @@
 
 @extends("layout.layoutMaster")
-
+<link rel="stylesheet" href="{{ asset('css/noticias.css') }}">
 @section("title", "Gestión de usuarios")
 @section("content")
 @include("include.side-bar-menu")
@@ -26,7 +26,7 @@
               <li>
                 <a href="#add" data-toggle="tab">Nuevo Usuario</a>
               </li>
-              <li class="active"><a href="" >Lista</a></li>
+              <li class="active"><a href="#lista" data-toggle="tab">Lista</a></li>
               <li><a href="#">Generar PDF</a></li>
               <li class="text-right" id="search_content"><a href="#"><i class="zmdi zmdi-search"> Buscar</i></a></li>
               <div class="bar" style="display: none;">
@@ -369,7 +369,7 @@
     <!-- Footer -->
     @include("include.footer")
   </main>  
-  <script defer>
+  <script>
     $.material.init();
   </script>
 

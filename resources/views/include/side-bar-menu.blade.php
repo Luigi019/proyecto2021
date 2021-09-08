@@ -6,22 +6,16 @@
 </label>
 <nav class="nav-menu">
     <div class="redondo"> 
-        <?php if (file_exists("assets/images/2eb64db57e761a673196220bd11445e8.jpg")) { ?>
-            <img class="logo_user" src="assets/images/2eb64db57e761a673196220bd11445e8.jpg">
-        <?php } else{ ?>
-            <img class="logo_user" src="../assets/images/2eb64db57e761a673196220bd11445e8.jpg">
-        <?php } ?>
+        <img class="logo_user" src="img/2eb64db57e761a673196220bd11445e8.jpg">
     </div>
     <ul>
-        
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Noticias</a></li>
-            <li><a href="#">Documentos</a></li>
-            <li><a href="#">Galeria</a></li>
-            <li><a href="#">Usuarios</a></li>
-            <li><a href="#">Visitantes</a></li>
-            <li><a href="#">Chat</a></li>
-   
+        <li><a href="/">Inicio</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Noticias</a></li>
+        <li><a href="/documentos">Documentos</a></li>
+        <li><a href="#">Galeria</a></li>
+        <li><a href="/usuarios">Usuarios</a></li>
+        <li><a href="/visitantes">Visitantes</a></li>
+        <li><a href="/chat">Chat</a></li>
     </ul>
 </nav>
