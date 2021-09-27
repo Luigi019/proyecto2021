@@ -7,11 +7,10 @@
 <link rel="stylesheet" href="{{ asset('css/chat') }}">
 
 
-
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" 
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" 
+      crossorigin="anonymous">
 
 <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
-<link rel="stylesheet" href="{{ asset('css/material-design-iconic-font.min.css') }}">
-<link rel="stylesheet" href="{{ asset('css/bootstrap-material-design.min.css') }}">
 
   @yield("css")

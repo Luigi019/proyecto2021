@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ajaxController;
 use App\Http\Controllers\homeController;
 use App\Http\Controllers\docsController;
 use App\Http\Controllers\usersController;
@@ -29,6 +30,8 @@ Route::get('visitantes/', [visitorController::class, 'visitor']);
 Route::get('documentos', [docsController::class, 'index']);
 
 Route::get('documentos/upload', [docsController::class, 'upload']);
+
+Route::post('documentos/getDocs', [docsController::class, 'getDocs']);
 
 Route::get('documentos/{oficina}/{doc?}', [docsController::class, 'getDocs']);
 

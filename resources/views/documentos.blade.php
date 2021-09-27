@@ -1,4 +1,4 @@
-@extends("layout.layoutMaster")
+@extends("layout.documentos.layoutMasterDocs")
 
 @section("title", "Catálogo de Documentos")
 @section("content")
@@ -45,17 +45,25 @@
                             <h4>Pertenece a: <strong>Inmobiliaria Nacional S.A.</strong></h4>
                             <h4>Fecha de publicación: <strong>18/7/2021</strong></h4>
                         </div>
-                        <p class="text-center pull-right">
-                            <a href="#edit_" class="btn btn-success btn-raised btn-xs edit_doc"><i class="zmdi zmdi-refresh"></i> Actualizar</a>
-                            <a href="#delete_" documento="id_" class="btn btn-danger btn-raised btn-xs delete_doc"><i class="zmdi zmdi-delete"></i> Eliminar</a>
-                            <a href="#!" class="btn btn-info btn-xs" style="margin-right: 10px;"><i class="zmdi zmdi-info-outline"></i> Visualizar</a>
-                        </p>
+                            <form id="tk_options" method="post" action="documentos/getDocs">
+                                @csrf
+                                <input type="hidden" name="id" value="1">
+                                <p class="text-center pull-right">
+                                    <a href="#edit_" class="btn btn-success btn-raised btn-xs edit_doc"><i class="zmdi zmdi-refresh"></i> Actualizar</a>
+                                    <a href="#delete_" documento="id_" class="btn btn-danger btn-raised btn-xs delete_doc"><i class="zmdi zmdi-delete"></i> Eliminar</a>
+                                    <a href="#!" class="btn btn-info btn-xs" style="margin-right: 10px;"><i class="zmdi zmdi-info-outline"></i> Visualizar</a>
+                                </p>
+                            </form>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <!-- Footer -->
+    @include("include.footer")
 </main>
+
 
 @endsection
 
+
+</div>

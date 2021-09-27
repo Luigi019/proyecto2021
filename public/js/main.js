@@ -16,15 +16,20 @@ $(document).ready(function(){
     // Modal editar Documento 
     $('.edit_doc').click(function(event){
         event.preventDefault();
-       
+    
+        var get_token = $('input[name="_token"]').val();
         var documento = $(this).attr('documento');
         var action   = 'infoDoc';
 
         $.ajax({
-            url: 'assets/Ajax/ajax.php',
+            url: 'documentos/getDocs',
             type: 'POST',
             async: true,
-            data: {action:action,producto:documento},
+            data: {
+            _token:get_token,
+            action:action,
+            documento:documento
+        },
 
             success: function(response){
                 if (response != 'Error') {
@@ -68,7 +73,7 @@ $(document).ready(function(){
         var action   = 'infoDoc';
 
         $.ajax({
-            url: 'assets/Ajax/ajax.php',
+            url: 'documentos/getDocs',
             type: 'POST',
             async: true,
             data: {action:action,producto:documento},
@@ -114,9 +119,6 @@ function show_again(){
     $('#search_content').show("slow","swing");
 }
 function closeModal(){
-    $('.alertAddProduct').html('');
-    $('#textCantidad').val('');
-    $('#textPrecio_venta').val('');
-    $('#textCosto_producto').val('');
+    $('.alert-document').html('');
     $('.modal').fadeOut();
 }
