@@ -10,10 +10,9 @@
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> --}}
 
 <!-- Main -->
-<script src="{{ asset('js/main.js') }}"></script>
+<script src="{{ asset('js/plugins.js') }}"></script>
 
-{{-- <script src="{{ asset('js/plugins.js') }}"></script>
-<script src="{{ asset('js/gallery.js') }}"></script>
+{{-- <script src="{{ asset('js/gallery.js') }}"></script>
 <script src="{{ asset('js/scripts.js') }}"></script> --}}
 
 
