@@ -48,26 +48,27 @@ class EnterpriseController extends BaseController
         request()->validate(Enterprise::$rules);
 
         $enterprise = Enterprise::create($request->all());
-
+        $enterprise->slug = $request->name;
+        
         if($request->hasFile('photo'))
         {
             $file = $request->file('photo')[0];
-    
+            
             $move = $file->store('enterprise' , 'public');
-    
+            
             $enterprise->files()->create([
                 'file'=>'storage/'.$move,
                 'type'=>'enterprise',
             ]);
-
+            
             
         }
-
+        
 
         return redirect()->route('admin.enterprises.index')
-            ->with('success', 'Información guardada satisfactoriamente.');
+        ->with('success', 'Información guardada satisfactoriamente.');
     }
-
+    
     /**
      * Display the specified resource.
      *
@@ -93,7 +94,7 @@ class EnterpriseController extends BaseController
 
         return view('panel.enterprise.edit', compact('enterprise'));
     }
-
+    
     /**
      * Update the specified resource in storage.
      *
@@ -104,8 +105,9 @@ class EnterpriseController extends BaseController
     public function update(Request $request, Enterprise $enterprise)
     {
         request()->validate(Enterprise::$rules);
-
+        
         $enterprise->update($request->all());
+        $enterprise->slug = $request->name;
 
         if($request->hasFile('photo'))
         {

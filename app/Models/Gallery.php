@@ -31,7 +31,7 @@ class Gallery extends Model
      *
      * @var array
      */
-    protected $fillable = ['name','description'];
+    protected $fillable = ['name', 'slug','description'];
 
     public function files()
     {

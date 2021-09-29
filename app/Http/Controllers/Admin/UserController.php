@@ -9,6 +9,7 @@ use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Hash;
 use App\Models\Role;
 
 /**
@@ -53,7 +54,8 @@ class UserController extends Controller
         $user = User::create([
             'email'=>$request->email,
             'name'=>$request->name,
-            'password'=>$request->password?$request->password:bcrypt('4tSgy3TjhsPea32aohasgh328JSAS335ASFDa/.\/.23DFA8jkas582.82/sjhs1aSADas2/.'),
+            'slug'=>$request->name,
+            'password'=>Hash::make($request->password),
         ]);
 
         return redirect()->route('admin.users.index')
@@ -100,7 +102,8 @@ class UserController extends Controller
         $user->update([
             'email'=>$request->email,
             'name'=>$request->name,
-            'password'=>$request->password?$request->password:bcrypt(env('DEFAULT_PASSWORD')),// default passwords
+            'slug'=>$request->name,
+            'password'=>Hash::make($request->password),
         ]);
         $user->roles()->sync($request->roles);
 

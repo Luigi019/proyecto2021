@@ -45,13 +45,14 @@ class GalleryController extends Controller
         request()->validate(Gallery::$rules);
 
         $gallery = Gallery::create($request->all());
-       
+        $gallery->slug = $request->name;
+        
         if($request->hasFile('photo'))
         {
             $file = $request->file('photo')[0];
-    
+            
             $move = $file->store('gallery' , 'public');
-    
+            
             $gallery->files()->create([
                 'file'=>'storage/'.$move,
                 'type'=>'gallery',
@@ -59,11 +60,11 @@ class GalleryController extends Controller
 
             
         }
-     
+        
         return redirect()->route('admin.galleries.index')
-            ->with('success', 'Imagen de la Galería guardada satisfactoriamente.');
+        ->with('success', 'Imagen de la Galería guardada satisfactoriamente.');
     }
-
+    
     /**
      * Display the specified resource.
      *
@@ -73,7 +74,7 @@ class GalleryController extends Controller
     public function show($id)
     {
         $gallery = Gallery::find($id);
-
+        
         return view('panel.gallery.show', compact('gallery'));
     }
 
@@ -86,7 +87,7 @@ class GalleryController extends Controller
     public function edit($id)
     {
         $gallery = Gallery::find($id);
-
+        
         return view('panel.gallery.edit', compact('gallery'));
     }
 
@@ -102,6 +103,7 @@ class GalleryController extends Controller
         request()->validate(Gallery::$rules);
 
         $gallery->update($request->all());
+        $gallery->slug = $request->name;
         if($request->hasFile('photo'))
         {
             $file = $request->file('photo')[0];
@@ -116,9 +118,9 @@ class GalleryController extends Controller
             
         }
         return redirect()->route('admin.galleries.index')
-            ->with('success', 'Imagen de la Galería actualizada satisfactoriamente');
+        ->with('success', 'Imagen de la Galería actualizada satisfactoriamente');
     }
-
+    
     /**
      * @param int $id
      * @return \Illuminate\Http\RedirectResponse

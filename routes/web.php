@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\ajaxController;
-use App\Http\Controllers\homeController;
 use App\Http\Controllers\docsController;
 use App\Http\Controllers\usersController;
 use App\Http\Controllers\visitorController;

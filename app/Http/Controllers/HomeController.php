@@ -32,5 +32,7 @@ class HomeController extends Controller
         return view('welcome', compact('gallery', 'news', 'enterprise', 'company'));
     }
 
-
+    public function __invoke(){
+        return view('welcome');
+    }
 }

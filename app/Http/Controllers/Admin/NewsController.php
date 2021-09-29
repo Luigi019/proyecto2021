@@ -46,26 +46,27 @@ class NewsController extends Controller
         request()->validate(News::$rules);
 
         $news = News::create($request->all());
+        $news->slug = $request->title;
         if($request->hasFile('photo'))
         {
           
             $file = $request->file('photo')[0];
-    
+            
             $move = $file->store('new' , 'public');
-    
+            
             $news->files()->create([
                 'file'=>'storage/'.$move,
                 'type'=>'new',
             ]);
 
-      
+            
         }
-
+        
 
         return redirect()->route('admin.news.index')
             ->with('success', 'Noticia guardada satisfactoriamente.');
     }
-
+    
     /**
      * Display the specified resource.
      *
@@ -78,7 +79,7 @@ class NewsController extends Controller
 
         return view('panel.news.show', compact('news'));
     }
-
+    
     /**
      * Show the form for editing the specified resource.
      *
@@ -88,10 +89,10 @@ class NewsController extends Controller
     public function edit($id)
     {
         $news = News::find($id);
-
+        
         return view('panel.news.edit', compact('news'));
     }
-
+    
     /**
      * Update the specified resource in storage.
      *
@@ -102,8 +103,9 @@ class NewsController extends Controller
     public function update(Request $request, News $news)
     {
         request()->validate(News::$rules);
-
+        
         $news->update($request->all());
+        $news->slug = $request->title;
         if($request->hasFile('photo'))
         {
             $file = $request->file('photo')[0];

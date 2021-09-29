@@ -47,23 +47,24 @@ class CompanyController extends Controller
         request()->validate(Company::$rules);
 
         $company = Company::create($request->all());
+        $company->slug = $request->name;
         if($request->hasFile('photo'))
         {
             $file = $request->file('photo')[0];
-    
+            
             $move = $file->store('company' , 'public');
-    
+            
             $company->files()->create([
                 'file'=>'storage/'.$move,
                 'type'=>'company',
             ]);
-
+            
             
         }
         return redirect()->route('admin.companies.index')
-            ->with('success', 'Información guardada satisfactoriamente.');
+        ->with('success', 'Información guardada satisfactoriamente.');
     }
-
+    
     /**
      * Display the specified resource.
      *
@@ -73,10 +74,10 @@ class CompanyController extends Controller
     public function show($id)
     {
         $company = Company::find($id);
-
+        
         return view('panel.company.show', compact('company'));
     }
-
+    
     /**
      * Show the form for editing the specified resource.
      *
@@ -86,10 +87,10 @@ class CompanyController extends Controller
     public function edit($id)
     {
         $company = Company::find($id);
-
+        
         return view('panel.company.edit', compact('company'));
     }
-
+    
     /**
      * Update the specified resource in storage.
      *
@@ -100,8 +101,9 @@ class CompanyController extends Controller
     public function update(Request $request, Company $company)
     {
         request()->validate(Company::$rules);
-
+        
         $company->update($request->all());
+        $company->slug = $request->name;
         if($request->hasFile('photo'))
         {
             $file = $request->file('photo')[0];
