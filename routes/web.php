@@ -39,3 +39,6 @@ Route::get('usuarios/', [usersController::class, 'users']);
 Route::get('blog/', [blogController::class, 'blog']);
 
 Route::get('chat/', [chatController::class, 'chat']);
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
