@@ -5,8 +5,8 @@
         <div class="u-blog u-blog-1">
             <div class="u-repeater u-repeater-1"><!--blog_post-->
             <div class="u-blog-post u-container-style u-repeater-item u-white u-repeater-item-1">
-                <div class="u-container-layout u-similar-container u-valign-middle-xl u-container-layout-1">
-                <img alt="" class="u-blog-control u-expanded-height-lg u-expanded-height-xl u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-1" src="assets/images/1.jpeg"><!--/blog_post_image-->
+                <div class="u-container-layout u-similar-container u-valign-middle-xl u-container-layout-3">
+                <img alt="" class="u-blog-control u-expanded-height-lg u-expanded-height-xl u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-1" src="img/1.jpeg"><!--/blog_post_image-->
                 <div class="u-container-style u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-group u-video-cover u-group-1">
                     <div class="u-container-layout u-valign-middle u-container-layout-2"><!--blog_post_metadata-->
                     <div class="u-blog-control u-metadata u-text-grey-50 u-metadata-1"><!--blog_post_metadata_date-->
@@ -24,7 +24,7 @@
             </div><!--/blog_post--><!--blog_post-->
             <div class="u-blog-post u-container-style u-repeater-item u-video-cover u-white u-repeater-item-2">
                 <div class="u-container-layout u-similar-container u-valign-middle-xl u-container-layout-3">
-                    <img alt="" class="u-blog-control u-expanded-height-lg u-expanded-height-xl u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-2" src="assets/images/2.jpeg"><!--/blog_post_image-->
+                    <img alt="" class="u-blog-control u-expanded-height-lg u-expanded-height-xl u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-2" src="img/2.jpeg"><!--/blog_post_image-->
                 <div class="u-container-style u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-group u-video-cover u-group-2">
                     <div class="u-container-layout u-valign-middle u-container-layout-4"><!--blog_post_metadata-->
                     <div class="u-blog-control u-metadata u-text-grey-50 u-metadata-2"><!--blog_post_metadata_date-->
@@ -42,7 +42,7 @@
             </div><!--/blog_post--><!--blog_post-->
             <div class="u-blog-post u-container-style u-repeater-item u-video-cover u-white u-repeater-item-3">
                 <div class="u-container-layout u-similar-container u-valign-middle-xl u-container-layout-5">
-                    <img alt="" class="u-blog-control u-expanded-height-lg u-expanded-height-xl u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3" src="assets/images/3.jpeg"><!--/blog_post_image-->
+                    <img alt="" class="u-blog-control u-expanded-height-lg u-expanded-height-xl u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3" src="img/3.jpeg"><!--/blog_post_image-->
                 <div class="u-container-style u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-group u-video-cover u-group-3">
                     <div class="u-container-layout u-valign-middle u-container-layout-6"><!--blog_post_metadata-->
                     <div class="u-blog-control u-metadata u-text-grey-50 u-metadata-3"><!--blog_post_metadata_date-->
@@ -60,7 +60,7 @@
             </div><!--/blog_post--><!--blog_post-->
             <div class="u-blog-post u-container-style u-repeater-item u-video-cover u-white u-repeater-item-4">
                 <div class="u-container-layout u-similar-container u-valign-middle-xl u-container-layout-7">
-                    <img alt="" class="u-blog-control u-expanded-height-lg u-expanded-height-xl u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-4" src="assets/images/1.jpeg"><!--/blog_post_image-->
+                    <img alt="" class="u-blog-control u-expanded-height-lg u-expanded-height-xl u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-4" src="img/1.jpeg"><!--/blog_post_image-->
                 <div class="u-container-style u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-group u-group-4">
                     <div class="u-container-layout u-valign-middle u-container-layout-8"><!--blog_post_metadata-->
                     <div class="u-blog-control u-metadata u-text-grey-50 u-metadata-4"><!--blog_post_metadata_date-->

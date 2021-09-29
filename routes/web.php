@@ -1,5 +1,13 @@
 <?php
 
+use App\Http\Controllers\ajaxController;
+use App\Http\Controllers\homeController;
+use App\Http\Controllers\docsController;
+use App\Http\Controllers\usersController;
+use App\Http\Controllers\visitorController;
+use App\Http\Controllers\blogController;
+use App\Http\Controllers\chatController;
+
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\NewsController;
@@ -44,3 +52,22 @@ Route::group([
     Route::resource('/galleries' , App\Http\Controllers\Admin\GalleryController::class);
 
 });
+Route::get('/', homeController::class);
+
+Route::get('/home', homeController::class);
+
+Route::get('visitantes/', [visitorController::class, 'visitor']);
+
+Route::get('documentos', [docsController::class, 'index']);
+
+Route::get('documentos/upload', [docsController::class, 'upload']);
+
+Route::post('documentos/getDocs', [docsController::class, 'getDocs']);
+
+Route::get('documentos/{oficina}/{doc?}', [docsController::class, 'getDocs']);
+
+Route::get('usuarios/', [usersController::class, 'users']);
+
+Route::get('blog/', [blogController::class, 'blog']);
+
+Route::get('chat/', [chatController::class, 'chat']);

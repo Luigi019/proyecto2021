@@ -7,4 +7,5 @@
 <meta property="og:url" content="">
 <meta property="og:image" content="">
 <meta name="theme-color" content="#fafafa">
+
 @yield("Meta")

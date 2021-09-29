@@ -1,5 +1,4 @@
-
-@extends("layout.layoutMaster")
+@extends("layout.visits_and_users.layoutMasterV&U")
 
 @section("title", "Gestión de usuarios")
 @section("content")
@@ -368,11 +367,5 @@
   </section>
     <!-- Footer -->
     @include("include.footer")
-  </main>  
-  <script defer>
-    $.material.init();
-  </script>
-
+</main>  
 @endsection
-
-

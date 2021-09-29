@@ -1,4 +1,4 @@
-@extends("layout.layoutMaster")
+@extends("layout.visits_and_users.layoutMasterV&U")
 
 @section("title", "Catálogo de Documentos")
 @section("content")
@@ -25,7 +25,7 @@
               <div class="col-xs-12">
                 <ul class="nav nav-tabs" style="margin-bottom: 15px">
                   <li>
-                    <a href="#add" data-toggle="tab">Nuevo Usuario</a>
+                    <a href="#add" data-toggle="tab">Nuevo Visitante</a>
                   </li>
                   <li class="active"><a href="">Lista</a></li>
                   <li><a href="#">Generar PDF</a></li>
