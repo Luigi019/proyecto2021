@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\ajaxController;
 use App\Http\Controllers\docsController;
 use App\Http\Controllers\usersController;
 use App\Http\Controllers\visitorController;
@@ -70,3 +69,7 @@ Route::get('usuarios/', [usersController::class, 'users']);
 Route::get('blog/', [blogController::class, 'blog']);
 
 Route::get('chat/', [chatController::class, 'chat']);
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');

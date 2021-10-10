@@ -1,4 +1,3 @@
-
   <main>
     @include("include.header")
     <section id="nosotros">
