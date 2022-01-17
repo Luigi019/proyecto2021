@@ -1,0 +1,1 @@
+<button class="btn btn-sm btn-primary" id='edit' data-id="{{$field->id}}"><i class="fas fa-user-edit"></i></button>
