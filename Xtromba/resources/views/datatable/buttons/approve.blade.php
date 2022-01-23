@@ -1,1 +1,0 @@
-<a href="{{route('panel.requestToTeacher.update', $field->id)}}" class="btn btn-sm btn-success"><i class="far fa-check-square"></i></a>

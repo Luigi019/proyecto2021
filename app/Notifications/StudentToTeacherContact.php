@@ -42,12 +42,12 @@ class StudentToTeacherContact extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-        ->greeting("Hola!, mi nombre es {$this->data->name} y te he contactado a través de Xtromba.")           
+        ->greeting("Hola!, mi nombre es {$this->data->name} y te he contactado a través de Inmobiliaria.")           
         ->line($this->data->subject)
         ->line($this->data->message)
         ->line('Contacto:')
         ->line($this->data->email)
-        ->salutation('Xtromba');
+        ->salutation('Inmobiliaria');
 
     }
 

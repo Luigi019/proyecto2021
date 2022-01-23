@@ -1,1 +1,0 @@
-<a href="{{route('panel.requestToTeacher.delete', $field->id)}}" class="btn btn-sm btn-danger"><i class="far fa-times-circle"></i></a>

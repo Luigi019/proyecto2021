@@ -11,7 +11,7 @@
             <div class="row mb-5">
                 <div class="col-md-8">
                     <h2 class="text-capitalize text-roboto font-weight-bolder">
-                        <img src="{{ asset('img/logo1.png') }}" alt="XTROMBA" height="40" width="40">
+                        <img src="{{ asset('img/logo1.png') }}" alt="Inmobiliaria" height="40" width="40">
                         <strong>Formaciones</strong>
                     </h2>
                 </div>

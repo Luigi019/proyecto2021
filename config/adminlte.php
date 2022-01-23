@@ -15,7 +15,7 @@ return [
     */
 
     'title' => '',
-    'title_prefix' => 'XTROMBA Admin | ',
+    'title_prefix' => 'Inmobiliaria Admin | ',
     'title_postfix' => '',
 
     /*
@@ -50,7 +50,7 @@ return [
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => 'vendor/adminlte/dist/img/logo-blanco.png',
     'logo_img_xl_class' => 'brand-image',
-    'logo_img_alt' => 'XTROMBA',
+    'logo_img_alt' => 'Inmobiliaria',
 
     /*
     |--------------------------------------------------------------------------

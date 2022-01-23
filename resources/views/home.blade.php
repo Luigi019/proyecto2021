@@ -12,7 +12,7 @@
         <div class='row d-none'>
             <div class='col-md-7 mt-3'>
                 <h2 class="text-capitalize text-roboto font-weight-bolder">
-                    <img src="{{asset('img/logo1.png')}}" alt="XTROMBA" height="40" width="40">
+                    <img src="{{asset('img/logo1.png')}}" alt="Inmobiliaria" height="40" width="40">
                     <strong>Clases proximas</strong>
                 </h2>
                 <div class="mb-4">
@@ -36,7 +36,7 @@
         </div>
         <div>
             <h2 class="text-capitalize text-roboto font-weight-bolder">
-                <img src="{{asset('img/logo1.png')}}" alt="XTROMBA" height="40" width="40">
+                <img src="{{asset('img/logo1.png')}}" alt="Inmobiliaria" height="40" width="40">
                 <strong>Formaciones populares</strong>
             </h2>
             <div class=' slider mt-4'>
@@ -45,7 +45,7 @@
         </div>
         <div>
             <h2 class="text-capitalize text-roboto font-weight-bolder">
-                <img src="{{asset('img/logo1.png')}}" alt="XTROMBA" height="40" width="40">
+                <img src="{{asset('img/logo1.png')}}" alt="Inmobiliaria" height="40" width="40">
                 <strong>Experiences populares</strong>
             </h2>
             <div class=' slider mt-4'>

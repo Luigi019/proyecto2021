@@ -196,7 +196,7 @@
                                             <label for="email">Correo: </label>
                                             <input type="email" class="form-control" name="email" id="email"
                                                 value="{{ $user->email }}">
-                                            <small>Ejemplo: pedrogarcia@xtromba.com</small>
+                                            <small>Ejemplo: pedrogarcia@Inmobiliaria.com</small>
                                         </div>
                                         <div class="form-group">
                                             <label for="phone">Teléfono: </label>

@@ -42,12 +42,12 @@ class SupportContact extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-        ->greeting("Hola!, mi nombre es {$this->data->name} y los he contactado a través del (Contactar a soporte) de Xtromba.")            
+        ->greeting("Hola!, mi nombre es {$this->data->name} y los he contactado a través del (Contactar a soporte) de Inmobiliaria.")            
         ->line($this->data->subject)
         ->line($this->data->message)
         ->line('Contacto:')
         ->line($this->data->email)
-        ->salutation('Xtromba');
+        ->salutation('Inmobiliaria');
 
     }
 

@@ -18,7 +18,7 @@
 
     {{-- <div class="d-flex py-3"> --}}
     <a class="navbar-brand" href="{{route('public.home.page')}}">
-        <img src="{{ asset('img/logo-blanco.png') }}" alt="xtromba" width="120" height="34">
+        <img src="{{ asset('img/logo-blanco.png') }}" alt="Inmobiliaria" width="120" height="34">
     </a>
 
     <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarCollapse"
@@ -30,7 +30,7 @@
 
         {{--  <div class="offcanvas-header mt-3 ml-5 px-5">
 
-          <img class="ml-3" src="{{ asset('img/logo-blanco.png') }}" alt="xtromba" width="120" height="34">
+          <img class="ml-3" src="{{ asset('img/logo-blanco.png') }}" alt="Inmobiliaria" width="120" height="34">
         </div>  --}}
 
         <ul id="web-nav" class="navbar-nav py-3">

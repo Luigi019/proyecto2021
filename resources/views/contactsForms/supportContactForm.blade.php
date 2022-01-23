@@ -114,7 +114,7 @@
             <div>
               <i class="fa fa-envelope"></i>
               
-              <p><a href="mailto:support@xtromba.webanagrama.com" title="glorythemes">support@xtromba.webanagrama.com</a></p>
+              <p><a href="mailto:support@Inmobiliaria.webanagrama.com" title="glorythemes">support@Inmobiliaria.webanagrama.com</a></p>
             </div>
 
             <div>

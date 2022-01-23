@@ -20,7 +20,7 @@ class ContactController extends Controller
         return view('contactsForms.supportContactForm');
     }
     public function supportContact( Request $request){
-        $to = ["info@xtromba.com", "support@xtromba.webanagrama.com"];
+        $to = ["info@Inmobiliaria.com", "support@Inmobiliaria.webanagrama.com"];
         \Meta::set('og:site_name:', 'Contactar a soporte');
         \Meta::set('description', 'Contactar a soporte');
         for($i = 0 ; $i < count($to) ; $i++)
@@ -42,7 +42,7 @@ class ContactController extends Controller
         $requestToTeacher->message = $request->message;
         $requestToTeacher->subject = $request->subject;
         $requestToTeacher->save();
-        $to = ["info@xtromba.com", "support@xtromba.webanagrama.com"];
+        $to = ["info@Inmobiliaria.com", "support@Inmobiliaria.webanagrama.com"];
         \Meta::set('og:site_name:', 'Solicitar ser profesor');
         \Meta::set('description', 'Solicitar ser profesor');
 

@@ -42,9 +42,9 @@ class ApproveRequestToTeacher extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-        ->greeting("Hola, le escribimos de parte de Xtromba.")           
+        ->greeting("Hola, le escribimos de parte de Inmobiliaria.")           
         ->line("Le informamos que satisfactoriamente su solicitud para ser profesor fue aprobada.")
-        ->salutation('Gracias por usar nuestra aplicacion, de parte del equipo de Xtromba.');
+        ->salutation('Gracias por usar nuestra aplicacion, de parte del equipo de Inmobiliaria.');
 
     }
 

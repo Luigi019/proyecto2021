@@ -44,13 +44,13 @@ class TeacherContact extends Notification
 
         $url = route('panel.requestToTeacher.update',[ $this->data['user']]);
         return (new MailMessage)
-        ->greeting("Hola!, mi nombre es {$this->data['request']->name} y los he contactado a través de Xtromba para solicitar ser profesor .")
+        ->greeting("Hola!, mi nombre es {$this->data['request']->name} y los he contactado a través de Inmobiliaria para solicitar ser profesor .")
         ->line($this->data['request']->subject)
         ->line($this->data['request']->message)
         ->line('Contacto:')
         ->line($this->data['request']->email)
         ->action('Hacer Profesor', $url)
-        ->salutation('Xtromba');
+        ->salutation('Inmobiliaria');
 
     }
 

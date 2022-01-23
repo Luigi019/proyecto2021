@@ -10,7 +10,7 @@
 
           <div class="d-flex justify-content-between ml-5 mr-5">
             <h1 class="text-capitalize text-roboto text-black-65 font-weight-bolder m-5">
-              <img src="{{asset('img/logo1.png')}}" alt="XTROMBA" height="40" width="40">
+              <img src="{{asset('img/logo1.png')}}" alt="Inmobiliaria" height="40" width="40">
               <strong>Instructores</strong>
             </h1>
 

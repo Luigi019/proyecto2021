@@ -9,7 +9,7 @@
       <label for="page">Titulo de la página: </label>
       <input type="text" class="form-control" name="titlePage" id="titlePage"
           value="{{  $page->titlePage }}" maxlength="25" required>
-      <small>Este será el enunciado de la pagina, ejemplo: Aviso legal de Xtromba </small>
+      <small>Este será el enunciado de la pagina, ejemplo: Aviso legal de Inmobiliaria </small>
   </div>
   <div class='form-group'>
     <label for='body'>Cuerpo de la pagina</label>

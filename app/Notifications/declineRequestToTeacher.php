@@ -42,10 +42,10 @@ class DeclineRequestToTeacher extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-        ->greeting("Hola, le escribimos de parte de Xtromba.")           
+        ->greeting("Hola, le escribimos de parte de Inmobiliaria.")           
         ->line("Le informamos que lastimosamente su solicitud para ser profesor fue declinada,")
         ->line('le invitamos a que vuelva a procesar su solicitud.')
-        ->salutation('Gracias por usar nuestra aplicacion, de parte del equipo de Xtromba.');
+        ->salutation('Gracias por usar nuestra aplicacion, de parte del equipo de Inmobiliaria.');
 
     }
 

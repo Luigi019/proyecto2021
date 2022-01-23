@@ -5,7 +5,7 @@
     <script src="https://kit.fontawesome.com/1b8df5c909.js" crossorigin="anonymous"></script>
 
     @include('layouts.inc.meta')
-    <title>XTROMBA | @yield('title')</title>
+    <title>Inmobiliaria | @yield('title')</title>
 
     @include('layouts.inc.css')
   @livewireStyles

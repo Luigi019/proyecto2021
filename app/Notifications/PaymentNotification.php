@@ -45,7 +45,7 @@ class PaymentNotification extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-            ->subject('Gracias por comprar en xtromba')
+            ->subject('Gracias por comprar en Inmobiliaria')
             ->line('Haz comprado ' . $this->data->title)
             ->action('Descargar factura', route('public.download-invoice' , $this->transaction))
             ->line('Gracias por comprar en ' . config('app.name'))
